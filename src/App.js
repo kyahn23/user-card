@@ -15,10 +15,11 @@ function App() {
   };
 
   return (
-    <div>
+    // div soup 에 빠지지 않기위해!!
+    <React.Fragment>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
-    </div>
+    </React.Fragment>
   );
 }
 
